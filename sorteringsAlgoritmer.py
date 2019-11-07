@@ -1,10 +1,7 @@
 from random import shuffle
 
-#list = [[i] for i in range(10)]
-list = ["a","A","b","B","c","C"]
-shuffle(list)
-print("Unsorted array:")
-print(list)
+text_file = open("TestCase0.txt", "r")
+list = text_file.readlines()
 
 # Traverse through all array elements
 for i in range(len(list)):
@@ -22,4 +19,4 @@ for i in range(len(list)):
 
 # Driver code to test above
 print ("Sorted array:")
-print(list)
+print("\n".join(list))
